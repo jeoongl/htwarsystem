@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Info Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Helvetica;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+    header {
+      background-color: green;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      width: 350px;
+    }
+    .login-btn, .contact-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+    .login-btn {
+      order: 1;
+      margin-left: auto;
+    }
+    .contact-btn {
+      order: 2;
+    }
+    .info-container {
+      width: 80%;
+      margin: auto;
+      background-color: #333;
+      overflow: hidden; /* Ensures the cover photo stays within its frame */
+    }
+    .cover-photo {
+      width: 100%;
+      padding-top: 50%; /* Sets a fixed frame aspect ratio (adjust as needed) */
+      background-size: cover; /* Ensures the photo covers the entire frame */
+      background-position: center; /* Centers the photo within the frame */
+    }
+    .description {
+      margin: 20px 20px;
+      font-size: 18px;
+    }
+    .photo-display-container {
+      margin: 0; /* Adjust the font size as needed */
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .photo-display {
+      max-width: 1224px;
+      width: 96%;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .photo-gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 50%; /* Two columns */
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto; /* Auto height */
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 767px) {
+      .logo {
+        width: 250px; /* Adjust logo size as needed */
+      }
+      .login-btn, .contact-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        color: white; /* Set text color to white */
+      }
+      .photo-display div {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+      }
+      .info-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo">
+    <button class="login-btn">Login</button>
+    <button class="contact-btn">Contact Us</button>
+  </header>
+
+  <div class="info-container">
+    <div class="cover-photo" style="background-image: url('img/cover-2.jpg');" alt="Cover Photo"></div>
+    <div class="description">
+      <p>This is the description of the tourist spot. You can provide detailed information about the place, its history, attractions, activities, etc.</p>
+    </div>
+    <div class="photo-display-container">
+      <div class="photo-display">
+        <h4>Menu</h4>
+        <div class="photo-gallery">
+          <div class="column">
+            <div class="photo">
+              <img src="img/menu-1.jpg" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="img/menu-2.jpg" alt="Photo 2">
+            </div>
+          </div>
+          <div class="column">
+            <div class="photo">
+              <img src="img/menu-3.jpg" alt="Photo 3">
+            </div>
+            <div class="photo">
+              <img src="img/menu-4.jpg" alt="Photo 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

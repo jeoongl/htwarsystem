@@ -1,0 +1,74 @@
+
+ 
+.decorative-line {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: block; /* Ensure block-level behavior */
+  background-color: red;
+  object-fit: cover;
+  background-position: center;
+  height: 45px; /* Fixed height */
+  width: 100%;
+  max-width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    text-align: center; /* Center-align content within the footer */
+}
+
+    .footer-container a {
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .footer-container a:hover {
+        text-decoration: underline; /* Optional: Add underline on hover */
+    }
+
+    .footer-column h3 {
+        margin-bottom: 10px;
+    }
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column img {
+
+    height: 50px; /* Set a fixed height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures proper scaling */
+    display: inline-block; /* Align images inline horizontally */
+    margin: 20px -10px; /* Optional: Add horizontal spacing between images */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 30px;
+}
+
