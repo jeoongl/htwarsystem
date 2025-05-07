@@ -35,4 +35,4 @@ HTWarSystem is a web-based tourism and reservation platform designed to connect 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/htwarsystem.git
+   git clone https://github.com/jeoongl/htwarsystem.git
